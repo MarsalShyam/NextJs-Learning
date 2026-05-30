@@ -3,6 +3,7 @@
 import {useRouter} from 'next/navigation';
 export default function OrderProduct() {
     const router=useRouter();
+
     const handleClick=()=>{
         console.log("Order Placed");
         // router.push("/");
