@@ -5,7 +5,7 @@ import Modal from "@/app/components/modal";
 export default async function PhotoModal({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params:Promise<{ id: string }>;
 }) {
   const { id } = await params;
   const photo: WonderImage = wondersImages.find((p) => p.id === id)!;
