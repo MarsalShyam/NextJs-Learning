@@ -1,9 +1,12 @@
-import {useState} from "react";
+import {cookies} from "next/headers";
 
-export default function AboutPage(){
-    const [name,setName]=useState("");
+export default async function AboutPage(){   
+    const cookieStore=await cookies();
+    const theme=cookieStore.get("theme");
+    console.log(theme);
+
     console.log("About Server Component");
     return(
-        <h1>About Page</h1>
+        <h1>About Page {new Date().toLocaleTimeString()}</h1>
     )
 }
