@@ -1,3 +1,6 @@
+export const dynamic="force-static";
+//ensure response is cache and serve instantly to all users
+
 export async function GET(){
     //This data would typically come from a database
     const categories=[
