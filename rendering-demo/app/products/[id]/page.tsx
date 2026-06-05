@@ -1,6 +1,6 @@
 export async function generateStaticParams(){
     return [{id:"1"},{id:"2"},{id:"3"}];
-}
+} //prerendered as static HTML (uses generateStaticParams) 
 
 export default async function ProductPage({
     params,
