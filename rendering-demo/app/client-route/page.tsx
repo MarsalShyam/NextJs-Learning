@@ -1,6 +1,7 @@
 "use client";
 // import {serverSideFunction} from "@/utils/server-utils"; //This serverSideFunction is not run in client side
 
+import {clientSideFunction} from "@/utils/client-utils";
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -16,11 +17,12 @@ export default function ClientRoutePage() {
     const settings = {
     dots: true,
   };
+  const result=clientSideFunction();
 
     return(
         <>
         {/* <h1>Client Route Page {result}</h1> */}
-        <h1 style={{color:theme.colors.primary}}>Client Route Page</h1>
+        <h1 style={{color:theme.colors.primary}}>Client Route Page {result}</h1>
         <div className="image-slider-container">
       <Slider {...settings}>
         <div>
