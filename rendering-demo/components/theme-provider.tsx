@@ -25,9 +25,9 @@ export const ThemeProvider=({
 }) =>{
   return (
     
-      <ThemeContext value={defaultTheme}>
+      <ThemeContext.Provider value={defaultTheme}>
       {children}
-      </ThemeContext>
+      </ThemeContext.Provider>
   );
 }
 
